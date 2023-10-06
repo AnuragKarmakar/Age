@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all 1s ease;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/water\ anim.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#disp {
+    animation: fade-in 5s ease;
+}
+
+.form {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    animation: fade-in 1s ease;
+}
+
+.form.hide {
+    animation: fade-out 1s ease;
+    display: none;
+}
+
+.display {
+    display: none;
+}
+
+.display.show {
+
+    display: block;
+    animation: fade-in 1s ease 2s;
+    text-align: center;
+    width: 100vw;
+
+}
+
+
+h1 {
+    font-size: 5rem;
+    padding: 0px;
+}
+
+h3 {
+    font-size: 0.7rem;
+
+}
+
+input {
+    height: 4rem;
+    width: 20rem;
+    border-radius: 2rem;
+    padding: 0px 15px;
+    outline: none;
+    border: 1px dotted black;
+    margin-top: 2rem;
+}
+
+button {
+    height: 4rem;
+    border-radius: 2rem;
+    padding: 0px 15px;
+    width: 4rem;
+    outline: none;
+    border: 1px solid black;
+}
+
+button:hover {
+
+    background-color: greenyellow;
+    width: 10rem;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #e5e5e589;
+    color: black;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+h1,
+h3,
+p {
+    user-select: none;
+}
+
+.footer p {
+
+    font-size: 1.2rem;
+}
+
+.footer p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+.text-show {
+    color: black;
+    opacity: 1;
+
+}
+
+.text-fade {
+    color: black;
+    opacity: 0;
+
+}
+
+#byme {
+    font-size: 0.5rem;
+}
+
+@media (max-width:600px) {
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0px;
+    }
+
+    input {
+        height: 4rem;
+        width: auto;
+        border-radius: 2rem;
+        padding: 0px 15px;
+        outline: none;
+        border: 1px dotted black;
+        margin-top: 2rem;
+    }
+
+    .footer p {
+
+        font-size: 1rem;
+        text-align: center;
+
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .footer p a {
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+    }
+}

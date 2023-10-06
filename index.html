@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life ❣️</title>
+    <link rel="shortcut icon" href="./img/hourglass.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="age.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="formContain" class="form">
+            <form action="" id="form" onsubmit="calc();return false;">
+                <h1>Date of birth</h1>
+                <h3>(Double check the input)</h3>
+                <input type="datetime-local" name="" id="birth" required>
+                <button type="submit">Start</button>
+                <p style="margin-top:  1rem;">Enter your <span style="font-style: italic">correct</span> date of birth
+                    to start</p>
+            </form>
+        </div>
+        <div id="displayDiv" class="display">
+            <p>You are </p>
+            <h1 id="disp"></h1>
+            <p>years old (at the moment)</p>
+        </div>
+        <div class="footer">
+            <p id="quote"></p>
+            <p id="byme">💤 <a href="https://anuragkarmakar.github.io/" target="_blank">Contact Me</a>
+            </p>
+        </div>
+
+
+
+    </div>
+    <script src="./age.js"></script>
+</body>
+
+</html>
